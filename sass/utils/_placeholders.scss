@@ -1,0 +1,13 @@
+%button {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $hero-footer;
+    box-shadow: 0px 4px 4px var(--caption-btn-box-sadow);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}

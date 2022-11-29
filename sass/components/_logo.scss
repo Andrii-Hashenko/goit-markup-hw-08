@@ -1,0 +1,16 @@
+.logo {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $color-logo-hed;
+    margin-right: 93px;
+  }
+  .logo-web {
+    color: $web-hover-fokus;
+  }
+  .nav-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
