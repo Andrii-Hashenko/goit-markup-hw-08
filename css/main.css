@@ -110,23 +110,7 @@ address {
 }
 
 /* HEADER */
-.page-head .conteiner {
-  display: flex;
-  align-content: center;
-}
-
-.nav-head {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-.nav-head__item:not(:first-child) {
-  margin-left: 50px;
-}
 .nav-head__label {
-  position: relative;
-  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -139,29 +123,6 @@ address {
 }
 .nav-head__label::after {
   content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 5px;
-  background: var(--web-hover-fokus);
-  border-radius: 2px;
-  opacity: 0;
-}
-.nav-head__label--current::after {
-  opacity: 1;
-}
-.nav-head__label--current {
-  color: var(--web-hover-fokus);
-}
-
-.contacts-head {
-  display: flex;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
 }
 .contacts-head__item:not(:first-child) {
   margin-left: 50px;
@@ -176,9 +137,6 @@ address {
   fill: var(--web-hover-fokus);
 }
 .contacts-head__contact {
-  display: flex;
-  align-self: center;
-  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -217,12 +175,7 @@ address {
 /* HERO */
 .hero {
   background: #2f303a;
-  text-align: center;
   padding: 200px 0;
-  max-width: 1600px;
-  min-height: 600px;
-  margin-right: auto;
-  margin-left: auto;
   background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)), url(../images/bghero.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -248,19 +201,14 @@ address {
 
 /* OFFER */
 .conteiner .offer {
-  display: flex;
-  margin: 0;
-  padding: 0;
   list-style: none;
   margin-left: calc(-1 * var(--ul-class-gap));
 }
 
 .offer__item {
-  flex-basis: calc(25% - var(--ul-class-gap));
   margin-left: var(--ul-class-gap);
 }
 .offer__icon {
-  justify-content: center;
   background: var(--team-background);
   border-radius: 4px;
   padding: 25px 100px;
@@ -293,21 +241,13 @@ address {
 }
 
 .job-box {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
   list-style: none;
   margin-left: calc(-1 * var(--ul-class-gap));
 }
 .job-box__item {
-  flex-basis: calc(33.3333333333% - var(--ul-class-gap));
   margin-left: var(--ul-class-gap);
 }
 
-.job-img {
-  position: relative;
-}
 .job-img__text {
   font-weight: 700;
   line-height: 1.14;
@@ -316,12 +256,6 @@ address {
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   padding: 27px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 70px;
 }
 
 /* TEAM */
@@ -338,14 +272,10 @@ address {
 }
 
 .team-conteiner {
-  display: flex;
-  margin: 0;
-  padding: 0;
   list-style: none;
   margin-left: calc(-1 * var(--ul-class-gap));
 }
 .team-conteiner__item {
-  flex-basis: calc(25% - var(--ul-class-gap));
   margin-left: var(--ul-class-gap);
 }
 
@@ -423,10 +353,11 @@ address {
   padding: 0;
   list-style: none;
   justify-content: center;
+  flex-wrap: wrap;
   margin-left: calc(-1 * var(--ul-class-gap));
 }
 .clients-list__item {
-  flex-basis: calc(16.6666666667% - var(--ul-class-gap));
+  flex-basis: calc(35% - var(--ul-class-gap));
   margin-left: var(--ul-class-gap);
   box-sizing: border-box;
   justify-content: center;
@@ -459,21 +390,12 @@ footer {
   padding-top: 60px;
 }
 
-.conteiner .footer-box {
-  justify-content: start;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
 .conteiner .adres-box {
   margin: 0;
   padding: 0;
-  margin-right: 70px;
 }
 
 .page-footer__logo {
-  display: inline-block;
   color: var(--hero-footer);
   padding: 0;
   margin: 0;
@@ -487,7 +409,6 @@ footer {
 .adres-footer__item {
   line-height: 1.71;
   color: var(--hero-footer);
-  width: 231px;
   margin-bottom: 9px;
   transition: color 250ms var(--cubic-bezier);
 }
@@ -508,10 +429,8 @@ footer {
 }
 
 .conteiner .joinin-box {
-  width: 206px;
   margin: 0;
   padding: 0;
-  margin-right: 93px;
 }
 
 .joinin-box__title {
@@ -520,6 +439,7 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   padding-top: 10px;
   color: var(--hero-footer);
   margin-bottom: 20px;
@@ -558,17 +478,8 @@ footer {
   fill: currentColor;
 }
 
-.subscribe {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
 .subscribe-form {
-  position: relative;
   display: inline-block;
-  width: 100%;
 }
 .subscribe-form__title {
   font-weight: 700;
@@ -586,7 +497,6 @@ footer {
   align-items: center;
 }
 .subscribe-form__input {
-  width: 354px;
   margin-right: 12px;
   font-family: "Roboto";
   font-style: normal;

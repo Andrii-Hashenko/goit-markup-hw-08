@@ -1,12 +1,12 @@
 /* HERO */
 .hero {
   background: $hero-footer-background;
-  text-align: center;
+  // text-align: center;
   padding: 200px 0;
-  max-width: 1600px;
-  min-height: 600px;
-  margin-right: auto;
-  margin-left: auto;
+  // max-width: 1600px;
+  // min-height: 600px;
+  // margin-right: auto;
+  // margin-left: auto;
   background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
     url(../images/bghero.jpeg);
   background-repeat: no-repeat;

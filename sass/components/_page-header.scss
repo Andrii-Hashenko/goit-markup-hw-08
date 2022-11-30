@@ -1,22 +1,22 @@
 /* HEADER */
 .page-head .conteiner {
-  display: flex;
-  align-content: center;
+  // display: flex;
+  // align-content: center;
 }
 
 .nav-head {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  // display: flex;
+  // margin-top: 0;
+  // margin-bottom: 0;
+  // padding-left: 0;
 
   &__item:not(:first-child) {
-    margin-left: 50px;
+    // margin-left: 50px;
   }
 
   &__label {
-    position: relative;
-    display: block;
+    // position: relative;
+    // display: block;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -32,32 +32,32 @@
 
   &__label::after {
     content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 5px;
-    background: var(--web-hover-fokus);
-    border-radius: 2px;
-    opacity: 0;
+    // position: absolute;
+    // left: 0;
+    // bottom: 0;
+    // display: block;
+    // width: 100%;
+    // height: 5px;
+    // background: var(--web-hover-fokus);
+    // border-radius: 2px;
+    // opacity: 0;
   }
 
   &__label--current::after {
-    opacity: 1;
+    // opacity: 1;
   }
 
   &__label--current {
-    color: var(--web-hover-fokus);
+    // color: var(--web-hover-fokus);
   }
 }
 
 .contacts-head {
-  display: flex;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  // display: flex;
+  // margin-left: auto;
+  // margin-top: 0;
+  // margin-bottom: 0;
+  // padding-left: 0;
 
   &__item:not(:first-child) {
     margin-left: 50px;
@@ -76,9 +76,9 @@
   }
 
   &__contact {
-    display: flex;
-    align-self: center;
-    align-items: center;
+    // display: flex;
+    // align-self: center;
+    // align-items: center;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;

@@ -13,14 +13,14 @@
 }
 
 .team-conteiner {
-  display: flex;
-  margin: 0;
-  padding: 0;
+  // display: flex;
+  // margin: 0;
+  // padding: 0;
   list-style: none;
   margin-left: calc(-1 * var(--ul-class-gap));
 
   &__item {
-    flex-basis: calc(100% / 4 - var(--ul-class-gap));
+    // flex-basis: calc(100% / 4 - var(--ul-class-gap));
     margin-left: var(--ul-class-gap);
   }
 }
