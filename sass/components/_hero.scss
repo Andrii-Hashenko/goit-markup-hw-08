@@ -2,6 +2,7 @@
 .hero {
   background: $hero-footer-background;
   text-align: center;
+  margin: 0;
   // padding: 200px 0;
   // max-width: 1600px;
   // min-height: 600px;
@@ -16,6 +17,7 @@
   @media screen and (min-width: 480px) and (max-width: 767px) {
     padding: 118px 0;
     min-height: 400px;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 118px 0;
@@ -34,10 +36,29 @@
     text-transform: uppercase;
     color: $hero-footer;
     margin-bottom: 30px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 42px;
+      /* or 162% */
+      
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      
+      color: #FFFFFF;
+    }
+    
   }
 
   &__btn {
     padding: 10px 32px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      padding: 10px 24px;
+      
+    }
     @extend %button;
     background: var(--caption-btn-h-f);
     transition: opacity 250ms var(--cubic-bezier),

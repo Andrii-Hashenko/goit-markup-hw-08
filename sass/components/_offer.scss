@@ -1,24 +1,29 @@
 /* OFFER */
 .conteiner .offer {
     // display: flex;
-    // margin: 0;
-    // padding: 0;
+    margin: 0;
+    padding: 0;
     list-style: none;
-    margin-left: calc(-1 * var(--ul-class-gap));
+    margin-bottom: 60px;
+    // margin-left: calc(-1 * var(--ul-class-gap));
   }
   .offer {
 
     &__item {
       // flex-basis: calc(100% / 4 - var(--ul-class-gap));
-      margin-left: var(--ul-class-gap);
+      // margin-left: var(--ul-class-gap);
     }
 
     &__icon {
-      // justify-content: center;
+      justify-content: center;
       background: var(--team-background);
       border-radius: 4px;
-      padding: 25px 100px;
-      margin-bottom: 55px;
+      @media screen and (min-width: 480px) and (max-width: 767px) {
+        padding: 25px 190px;
+        margin-bottom: 30px;
+      }
+      // padding: 25px 100px;
+      // margin-bottom: 55px;
     }
 
     &__title {
@@ -28,11 +33,19 @@
       text-transform: uppercase;
       color: $text-color;
       margin-bottom: 10px;
+      @media screen and (min-width: 480px) and (max-width: 767px) {
+        text-align: center;
+      }
     }
 
     &__text {
       line-height: 1.71;
       color: $additional-text;
+      
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      &__text:not(last-child) {margin-bottom: 30px;} 
+      
     }
   }
  
