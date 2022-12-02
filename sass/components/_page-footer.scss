@@ -6,9 +6,9 @@ footer {
 .conteiner .footer-box {
   // justify-content: start;
   // display: flex;
-  // margin: 0;
-  // padding: 0;
-}
+  margin: 0;
+  padding: 0;
+ }
 .conteiner .adres-box {
   margin: 0;
   padding: 0;
@@ -16,9 +16,11 @@ footer {
 }
 
 .page-footer__logo {
-  // display: inline-block;
+  display: inline-block;
+  justify-content: center;
   color: var(--hero-footer);
   padding: 0;
+  padding-left: 50%;
   margin: 0;
   margin-bottom: 20px;
 }

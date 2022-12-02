@@ -1,48 +1,50 @@
 /* JOB */
 .job {
-    padding-top: 0;
-
-    &__title {
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.17;
-      text-align: center;
-      color: $text-color;
-      margin-bottom: 50px;
-    }
+  padding-top: 0;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: none;
   }
-  
-  .job-box {
-    // display: flex;
-    // justify-content: space-around;
-    // margin: 0;
-    // padding: 0;
-    list-style: none;
-    margin-left: calc(-1 * var(--ul-class-gap));
-
-    &__item {
-      // flex-basis: calc(100% / 3 - var(--ul-class-gap));
-      margin-left: var(--ul-class-gap);
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) { display: none;}
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: $text-color;
+    margin-bottom: 50px;
   }
-  
-  .job-img {
-    // position: relative;
+}
 
-    &__text {
-      font-weight: 700;
-      line-height: 1.14;
-      text-align: center;
-      text-transform: uppercase;
-      color: $hero-footer;
-      background: $img-text-bg;
-      padding: 27px;
-      // position: absolute;
-      // left: 0;
-      // bottom: 0;
-      // display: block;
-      // width: 100%;
-      // height: 70px;
-    }
+.job-box {
+  // display: flex;
+  // justify-content: space-around;
+  // margin: 0;
+  // padding: 0;
+  list-style: none;
+  margin-left: calc(-1 * var(--ul-class-gap));
+
+  &__item {
+    // flex-basis: calc(100% / 3 - var(--ul-class-gap));
+    margin-left: var(--ul-class-gap);
   }
-  
+}
+
+.job-img {
+  // position: relative;
+
+  &__text {
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: $hero-footer;
+    background: $img-text-bg;
+    padding: 27px;
+    // position: absolute;
+    // left: 0;
+    // bottom: 0;
+    // display: block;
+    // width: 100%;
+    // height: 70px;
+  }
+}

@@ -2,8 +2,24 @@
 .page-head .conteiner {
   // display: flex;
   // align-content: center;
+  
+  border-bottom: 1px solid var(--headline-border-bottom);
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+ 
+}
+@media screen and (min-width: 1200px) {
 
+}
+.nav-menu {
+  // display: flex;
+  // justify-content: flex-start;
+  // align-items: center;
+}
 .nav-head {
   // display: flex;
   // margin-top: 0;
@@ -94,5 +110,5 @@
 }
 
 .page-head {
-  border-bottom: 1px solid var(--headline-border-bottom);
+  // border-bottom: 1px solid var(--headline-border-bottom);
 }

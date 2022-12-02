@@ -59,15 +59,25 @@ body {
 }
 
 .conteiner {
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
-
-.section {
-  padding: 94px 0;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .conteiner {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+  }
 }
 
 h1,
@@ -110,6 +120,10 @@ address {
 }
 
 /* HEADER */
+.page-head .conteiner {
+  border-bottom: 1px solid var(--headline-border-bottom);
+}
+
 .nav-head__label {
   font-weight: 500;
   line-height: 1.14;
@@ -149,37 +163,58 @@ address {
   color: var(--web-hover-fokus);
 }
 
-.page-head {
-  border-bottom: 1px solid var(--headline-border-bottom);
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: #000000;
-  margin-right: 93px;
+  margin-top: 16px;
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: 15px;
 }
 
 .logo-web {
   color: #2196f3;
 }
 
-.nav-logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.menu-button {
+  padding: 12px 8px;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-left: auto;
 }
 
 /* HERO */
 .hero {
   background: #2f303a;
-  padding: 200px 0;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)), url(../images/bghero.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero {
+    padding: 118px 0;
+    min-height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    padding: 118px 0;
+    min-height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+    min-height: 600px;
+  }
 }
 .hero__title {
   font-weight: 900;
@@ -230,6 +265,16 @@ address {
 /* JOB */
 .job {
   padding-top: 0;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .job {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .job {
+    display: none;
+  }
 }
 .job__title {
   font-weight: 700;
@@ -390,14 +435,22 @@ footer {
   padding-top: 60px;
 }
 
+.conteiner .footer-box {
+  margin: 0;
+  padding: 0;
+}
+
 .conteiner .adres-box {
   margin: 0;
   padding: 0;
 }
 
 .page-footer__logo {
+  display: inline-block;
+  justify-content: center;
   color: var(--hero-footer);
   padding: 0;
+  padding-left: 50%;
   margin: 0;
   margin-bottom: 20px;
 }
