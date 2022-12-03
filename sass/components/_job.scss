@@ -1,6 +1,7 @@
 /* JOB */
 .job {
   padding-top: 0;
+  display: none;
   @media screen and (min-width: 480px) and (max-width: 767px) {
     display: none;
   }
