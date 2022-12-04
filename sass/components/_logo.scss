@@ -1,17 +1,23 @@
 .logo {
-    font-family: $secondary-font;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: $color-logo-hed;
+  display: inline-flex;
+  margin-top: 16px;
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: 15px;
+  @media screen and (min-width: 1200px) {
+    font-family: "Raleway";
     font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
-    color: $color-logo-hed;
-    display: inline-flex;
-    margin-top: 16px;
-    margin-right: auto;
-    margin-bottom: 16px;
-    margin-left: 15px;
-    
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--color-logo-hed);
+    margin-right: 93px;
   }
-  .logo-web {
-    color: $web-hover-fokus;
-  }
-  
+}
+.logo-web {
+  color: $web-hover-fokus;
+}

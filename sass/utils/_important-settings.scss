@@ -9,10 +9,9 @@ body {
 .conteiner {
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0;
-  
   margin-right: auto;
   margin-left: auto;
+  
   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 480px;
   }
@@ -23,9 +22,14 @@ body {
     width: 1200px;
   }
 }
-// .section {
-//   // padding: 94px 0;
-// }
+.section {
+  @media screen and (min-width: 1200px) {
+    //  padding: 94px 0;
+    padding: 0;
+    padding-bottom: 94px;
+  }
+ 
+}
 h1,
 h2,
 h3,

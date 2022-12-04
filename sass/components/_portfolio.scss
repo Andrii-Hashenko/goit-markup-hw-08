@@ -5,8 +5,13 @@
   justify-content: center;
   margin: 0;
   padding: 0;
+  padding-top: 94px;
   list-style: none;
   margin-left: calc(-1 * var(--filter-gap));
+
+  @media screen and (min-width: 1200px) {
+    
+  }
 
   &__item {
     margin-left: var(--filter-gap);
