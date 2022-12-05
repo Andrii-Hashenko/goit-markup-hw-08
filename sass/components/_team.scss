@@ -10,33 +10,41 @@
     color: var(--text-color);
     @media screen and (min-width: 480px) and (max-width: 767px) {
       margin-bottom: 30px;
-     padding-top: 60px;
+      padding-top: 60px;
     }
 
     @media screen and (min-width: 1200px) {
- margin-bottom: 50px;
+      margin-bottom: 50px;
     }
-   
   }
 }
 
 .team-conteiner {
-  
   margin: 0;
   padding: 0;
   list-style: none;
-  
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
   @media screen and (min-width: 1200px) {
-display: flex;
-margin-left: calc(-1 * var(--ul-class-gap));
+    display: flex;
+    margin-left: calc(-1 * var(--ul-class-gap));
   }
   &__item {
-
-    @media screen and (min-width: 1200px) {
- flex-basis: calc(100% / 4 - var(--ul-class-gap));
-    margin-left: var(--ul-class-gap);
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: calc(100% / 2 - var(--ul-class-gap));
+      margin-left: var(--ul-class-gap);
     }
-   
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - var(--ul-class-gap));
+      margin-left: var(--ul-class-gap);
+    }
   }
 }
 
@@ -49,16 +57,20 @@ margin-left: calc(-1 * var(--ul-class-gap));
   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 100%;
     text-align: center;
-    margin: 0 15px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 100%;
+    text-align: center;
     margin-bottom: 30px;
   }
 
   &__img {
     margin-bottom: 30px;
-    @media screen and (min-width: 480px) and (max-width: 767px) {width: 100%;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      width: 100%;
       text-align: center;
-          }
-    
+    }
   }
 
   &__cap {
@@ -116,5 +128,4 @@ margin-left: calc(-1 * var(--ul-class-gap));
     fill: currentColor;
     transition: color 250ms var(--cubic-bezier);
   }
-  
 }

@@ -25,12 +25,11 @@
     <header>
       <div class="page-head">
         <div class="conteiner">
-         
           <nav class="nav-menu">
             <a class="logo" href="./index.html"
-            ><span class="logo-web">Web</span>Studio</a
-          >
-          
+              ><span class="logo-web">Web</span>Studio</a
+            >
+<div class="menu-conteiner" id="menu-container" data-menu>123</div>
             <ul class="nav-head">
               <li class="nav-head__item">
                 <a
@@ -64,21 +63,29 @@
             </li>
           </ul>
           <button
-          type="button"
-          class="menu-button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
           >
-            <use class="icon-close" href="./images/icons.svg#close_24px"></use>
-            <use class="icon-menu" href="./images/icons.svg#menu_24px"></use>
-          </svg>
-        </button>
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-close"
+                href="./images/icons.svg#close_24px"
+                
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/icons.svg#menu_24px"
+                
+              ></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -156,9 +163,9 @@
       </section>
       <!-- JOB -->
       <section class="section">
-       
         <div class="conteiner">
-          <div class="job"><h2 class="job__title">Чим ми займаємося</h2>
+          <div class="job">
+            <h2 class="job__title">Чим ми займаємося</h2>
             <ul class="job-box">
               <li class="job-box__item">
                 <div class="job-img">
@@ -193,8 +200,8 @@
                   <p class="job-img__text">Дизайнерські рішення</p>
                 </div>
               </li>
-            </ul></div>
-          
+            </ul>
+          </div>
         </div>
       </section>
       <!-- TEAM -->
@@ -710,7 +717,7 @@
       </div>
     </div>
     <!-- SCRIPT -->
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

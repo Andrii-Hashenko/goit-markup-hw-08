@@ -136,6 +136,9 @@ address {
   }
 }
 
+.nav-menu {
+  position: relative;
+}
 @media screen and (min-width: 1200px) {
   .nav-menu {
     display: flex;
@@ -155,6 +158,11 @@ address {
   margin-bottom: 10px;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
 @media screen and (min-width: 1200px) {
   .menu-button {
     display: none;
@@ -162,6 +170,25 @@ address {
 }
 .menu-button .icon-close {
   display: none;
+}
+.menu-button.is-open .icon-close {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-conteiner {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+.menu-conteiner.is-open {
+  display: block;
 }
 
 @media screen and (max-width: 479px) {
@@ -172,6 +199,14 @@ address {
 @media screen and (min-width: 480px) {
   .nav-head {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-head {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -233,6 +268,13 @@ address {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .contacts-head {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts-head {
     display: flex;
@@ -262,6 +304,14 @@ address {
   letter-spacing: 0.02em;
   color: var(--additional-text);
   transition: color 250ms var(--cubic-bezier);
+}
+@media screen and (min-width: 768px) {
+  .contacts-head__contact {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    padding: 32px 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts-head__contact {
@@ -536,10 +586,24 @@ address {
   padding: 0;
   list-style: none;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
 @media screen and (min-width: 1200px) {
   .team-conteiner {
     display: flex;
     margin-left: calc(-1 * var(--ul-class-gap));
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-conteiner__item {
+    flex-basis: calc(50% - var(--ul-class-gap));
+    margin-left: var(--ul-class-gap);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -558,7 +622,13 @@ address {
   .team-box {
     width: 100%;
     text-align: center;
-    margin: 0 15px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-box {
+    width: 100%;
+    text-align: center;
     margin-bottom: 30px;
   }
 }
@@ -657,7 +727,7 @@ address {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-list {
     flex-wrap: wrap;
-    width: 50%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -666,13 +736,20 @@ address {
   }
 }
 .clients-list__item {
-  flex-basis: calc(35% - var(--ul-class-gap));
+  flex-basis: calc(50% - var(--ul-class-gap));
   margin-left: var(--ul-class-gap);
   box-sizing: border-box;
   justify-content: center;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .clients-list__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 90px) / 3);
     margin-bottom: 30px;
   }
 }
