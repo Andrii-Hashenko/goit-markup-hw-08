@@ -177,6 +177,7 @@ address {
   text-align: start;
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  padding: 48px 40px;
 }
 @media screen and (max-width: 767px) {
   .menu-conteiner {
@@ -200,16 +201,26 @@ address {
 .nav-head {
   margin-bottom: 300px;
 }
-.nav-head__item {
+.nav-head__item:not(:first-child) {
   margin-top: 40px;
-  margin-left: 40px;
 }
 .nav-head__label {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--text-color);
   transition: color 250ms var(--cubic-bezier);
+}
+@media screen and (min-width: 1200px) {
+  .nav-head__label {
+    position: relative;
+    display: block;
+    padding: 32px 0;
+    line-height: 1.14;
+  }
 }
 .nav-head__label:hover, .nav-head__label:focus {
   color: var(--web-hover-fokus);
@@ -220,7 +231,6 @@ address {
 
 .contacts-head__item {
   margin-bottom: 30px;
-  margin-left: 40px;
 }
 .contacts-head__item:last-child {
   margin-bottom: 60px;
@@ -235,15 +245,65 @@ address {
   fill: var(--web-hover-fokus);
 }
 .contacts-head__contact {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--additional-text);
   transition: color 250ms var(--cubic-bezier);
 }
+@media screen and (min-width: 1200px) {
+  .contacts-head__contact {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    line-height: 1.14;
+    padding: 32px 0;
+  }
+}
 .contacts-head__contact:hover,
 .contacts-head .contacts-head__contact:focus {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
   color: var(--web-hover-fokus);
+}
+
+.mobile-list {
+  display: flex;
+  margin-right: auto;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-list {
+    display: none;
+  }
+}
+.mobile-list__item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mobile-list__item:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+.mobile-list__item:first-child {
+  padding-left: 0;
+}
+.mobile-list__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .page-head {
