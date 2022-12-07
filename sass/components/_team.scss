@@ -8,9 +8,11 @@
     line-height: 1.17;
     text-align: center;
     color: var(--text-color);
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      margin-bottom: 30px;
-      padding-top: 60px;
+    margin-bottom: 30px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 768px) {
+     
     }
 
     @media screen and (min-width: 1200px) {
@@ -23,6 +25,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
   @media screen and (min-width: 480px) and (max-width: 767px) {
 
   }
@@ -49,28 +52,21 @@
 }
 
 .team-box {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
   background: var(--hero-footer);
   box-shadow: 0px 1px 3px var(--team-bth-p-box-shadow),
     0px 1px 1px var(--team-box-shadow-two),
     0px 2px 1px var(--team-box-shadow-three);
   border-radius: 0px 0px 4px 4px;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-  }
+  
 
   &__img {
     margin-bottom: 30px;
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      width: 100%;
+    width: 100%;
       text-align: center;
-    }
+    
   }
 
   &__cap {

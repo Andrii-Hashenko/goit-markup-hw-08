@@ -1,67 +1,58 @@
 /* OFFER */
 .conteiner .offer {
-    
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin-bottom: 60px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: calc(-1 * var(--ul-class-gap));
+  }
+}
+.offer {
+  &__item {
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - var(--ul-class-gap));
+      margin-left: var(--ul-class-gap);
+    }
+  }
+
+  &__icon {
+    justify-content: center;
+    background: var(--team-background);
+    border-radius: 4px;
+    padding: 25px 190px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+    }
     
     @media screen and (min-width: 1200px) {
-display: flex;
-margin-left: calc(-1 * var(--ul-class-gap));
-
-    }
-  }
-  .offer {
-
-    &__item {
-
-      @media screen and (min-width: 1200px) {
- flex-basis: calc(100% / 4 - var(--ul-class-gap));
-      margin-left: var(--ul-class-gap);
-      }
-     
-    }
-
-    &__icon {
-      justify-content: center;
-      background: var(--team-background);
-      border-radius: 4px;
-       padding: 25px 190px;
-        margin-bottom: 30px;
-      
-      @media screen and (min-width: 768px) {
-
-      }
-      @media screen and (min-width: 1200px) {
-padding: 25px 100px;
+      padding: 25px 100px;
       margin-bottom: 55px;
-      }
-      
-    }
-
-    &__title {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.14;
-      text-transform: uppercase;
-      color: $text-color;
-      margin-bottom: 10px;
-      text-align: center;
-      @media screen and (min-width: 768px) {
-        
-      }
-    }
-
-    &__text {
-      line-height: 1.71;
-      color: $additional-text;
-      
-    }
-    &__text:not(last-child) {margin-bottom: 30px;} 
-    @media screen and (min-width: 768px) {
-      
-      
     }
   }
- 
+
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+    }
+  }
+
+  &__text {
+    line-height: 1.71;
+    color: $additional-text;
+  }
+  &__text:not(last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+}
