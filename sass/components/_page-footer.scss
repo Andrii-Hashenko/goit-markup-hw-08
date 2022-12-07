@@ -6,6 +6,7 @@ footer {
 .conteiner .footer-box {
   margin: 0;
   padding: 0;
+
   @media screen and (min-width: 1200px) {
     justify-content: start;
     display: flex;
@@ -21,12 +22,17 @@ footer {
 }
 
 .page-footer__logo {
-  color: var(--hero-footer);
+  display: block;
+  text-align: center;
+  margin-left: 0;
   margin-bottom: 20px;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    display: block;
-    text-align: center;
-    margin-left: 0;
+  color: var(--hero-footer);
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    text-align: start;
+    margin-left: 115px;
+    margin-right: auto;
   }
   @media screen and (min-width: 1200px) {
     display: inline-block;
