@@ -27,11 +27,12 @@ margin-left: calc(-1 * var(--ul-class-gap));
       justify-content: center;
       background: var(--team-background);
       border-radius: 4px;
-      @media screen and (min-width: 480px) and (max-width: 767px) {
-        padding: 25px 190px;
+       padding: 25px 190px;
         margin-bottom: 30px;
-      }
+      
+      @media screen and (min-width: 768px) {
 
+      }
       @media screen and (min-width: 1200px) {
 padding: 25px 100px;
       margin-bottom: 55px;
@@ -46,8 +47,9 @@ padding: 25px 100px;
       text-transform: uppercase;
       color: $text-color;
       margin-bottom: 10px;
-      @media screen and (min-width: 480px) and (max-width: 767px) {
-        text-align: center;
+      text-align: center;
+      @media screen and (min-width: 768px) {
+        
       }
     }
 
@@ -56,8 +58,9 @@ padding: 25px 100px;
       color: $additional-text;
       
     }
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      &__text:not(last-child) {margin-bottom: 30px;} 
+    &__text:not(last-child) {margin-bottom: 30px;} 
+    @media screen and (min-width: 768px) {
+      
       
     }
   }
