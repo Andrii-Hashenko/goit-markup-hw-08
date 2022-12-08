@@ -4,7 +4,7 @@
 
   &__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     color: var(--text-color);
@@ -12,10 +12,10 @@
     padding-top: 60px;
 
     @media screen and (min-width: 768px) {
-     
     }
 
     @media screen and (min-width: 1200px) {
+      font-size: 36px;
       margin-bottom: 50px;
     }
   }
@@ -26,9 +26,6 @@
   padding: 0;
   list-style: none;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-
-  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
@@ -60,13 +57,11 @@
     0px 1px 1px var(--team-box-shadow-two),
     0px 2px 1px var(--team-box-shadow-three);
   border-radius: 0px 0px 4px 4px;
-  
 
   &__img {
     margin-bottom: 30px;
     width: 100%;
-      text-align: center;
-    
+    text-align: center;
   }
 
   &__cap {
@@ -80,10 +75,14 @@
 
   &__text {
     font-size: 16px;
-    line-height: 1.36;
+    line-height: 1.19;
     text-align: center;
     color: var(--additional-text);
     margin-bottom: 16px;
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.36;
+    }
   }
 }
 
@@ -92,7 +91,11 @@
   justify-content: center;
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 
   &__item {
     flex-basis: calc((100% - 30px) / 4);

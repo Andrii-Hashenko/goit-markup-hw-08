@@ -1,8 +1,8 @@
 /* MODAL */
 .modal {
     position: absolute;
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     left: 50%;
     top: 56%;
     padding: 40px;
@@ -12,7 +12,10 @@
       0px 1px 1px var(--team-box-shadow-two),
       0px 2px 1px var(--team-box-shadow-three);
     border-radius: 4px;
-
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+    min-height: 581px;
+    }
     &__close {
       position: absolute;
       width: 30px;

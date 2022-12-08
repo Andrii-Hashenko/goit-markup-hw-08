@@ -141,12 +141,20 @@ address {
 }
 
 .menu-button {
-  display: inline-flex;
+  display: flex;
   z-index: 2;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
   margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -165,6 +173,11 @@ address {
   .menu-button {
     display: none;
   }
+}
+
+.menu-button .icon-close:hover,
+.menu-button .icon-close:focus {
+  fill: var(--web-hover-fokus);
 }
 
 .menu-conteiner {
@@ -214,6 +227,11 @@ address {
 .nav-head__item:not(:first-child) {
   margin-top: 40px;
 }
+@media screen and (min-width: 1200px) {
+  .nav-head__item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
 .nav-head__label {
   font-family: "Roboto";
   font-style: normal;
@@ -235,6 +253,25 @@ address {
 .nav-head__label:hover, .nav-head__label:focus {
   color: var(--web-hover-fokus);
 }
+@media screen and (min-width: 1200px) {
+  .nav-head__label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: var(--web-hover-fokus);
+    border-radius: 2px;
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-head__label--current::after {
+    opacity: 1;
+  }
+}
 .nav-head__label--current {
   color: var(--web-hover-fokus);
 }
@@ -245,8 +282,22 @@ address {
   flex-direction: column-reverse;
   padding-left: 0;
 }
+@media screen and (min-width: 1200px) {
+  .contacts-head {
+    display: flex;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+}
 .contacts-head__item {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-head__item {
+    margin-left: 40px;
+  }
 }
 .contacts-head__item:first-child {
   margin-bottom: 60px;
@@ -429,7 +480,6 @@ address {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .conteiner .offer {
@@ -459,12 +509,17 @@ address {
 }
 .offer__title {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .offer__title {
+    font-size: 16px;
+  }
 }
 .offer__text {
   line-height: 1.71;
@@ -475,6 +530,8 @@ address {
 }
 /* JOB */
 .job {
+  margin: 0;
+  padding: 0;
   padding-top: 0;
 }
 @media screen and (max-width: 1199px) {
@@ -529,7 +586,7 @@ address {
 }
 .team__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: var(--text-color);
@@ -538,6 +595,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .team__title {
+    font-size: 36px;
     margin-bottom: 50px;
   }
 }
@@ -597,10 +655,15 @@ address {
 }
 .team-box__text {
   font-size: 16px;
-  line-height: 1.36;
+  line-height: 1.19;
   text-align: center;
   color: var(--additional-text);
   margin-bottom: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .team-box__text {
+    line-height: 1.36;
+  }
 }
 
 .team-social {
@@ -608,7 +671,12 @@ address {
   justify-content: center;
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team-social {
+    padding-bottom: 30px;
+  }
 }
 .team-social__item {
   flex-basis: calc((100% - 30px) / 4);
@@ -639,6 +707,11 @@ address {
 
 /* clients */
 .clients__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -962,8 +1035,8 @@ footer {
 /* MODAL */
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   left: 50%;
   top: 56%;
   padding: 40px;
@@ -971,6 +1044,12 @@ footer {
   background: var(--hero-footer);
   box-shadow: 0px 1px 3px var(--team-bth-p-box-shadow), 0px 1px 1px var(--team-box-shadow-two), 0px 2px 1px var(--team-box-shadow-three);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 .modal__close {
   position: absolute;

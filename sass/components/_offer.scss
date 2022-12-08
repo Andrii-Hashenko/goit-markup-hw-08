@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 60px;
+  
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -27,7 +27,7 @@
 
     @media screen and (min-width: 768px) {
     }
-    
+
     @media screen and (min-width: 1200px) {
       padding: 25px 100px;
       margin-bottom: 55px;
@@ -36,13 +36,15 @@
 
   &__title {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: $text-color;
     margin-bottom: 10px;
     text-align: center;
-    @media screen and (min-width: 768px) {
+    
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
     }
   }
 
