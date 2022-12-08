@@ -192,22 +192,22 @@ address {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: auto;
-  text-align: start;
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  padding: 48px 40px;
 }
 @media screen and (max-width: 767px) {
   .menu-conteiner {
     display: none;
+    padding: 48px 40px;
+    text-align: start;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
   .menu-conteiner {
     display: flex;
-    justify-content: space-between;
+    width: 70%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1385,7 +1385,9 @@ textarea {
   }
 }
 .portfolio__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms var(--cubic-bezier);
 }
 .portfolio__link:hover,
@@ -1399,6 +1401,7 @@ textarea {
   border-bottom: 1px solid var(--headline-border-bottom);
   border-left: 1px solid var(--headline-border-bottom);
   margin-bottom: 30px;
+  flex-grow: 1;
 }
 .portfolio-card__head {
   font-weight: 700;
@@ -1436,6 +1439,11 @@ textarea {
   transform: translatey(137%);
   opacity: 0;
   transition: transform 250ms var(--cubic-bezier), opacity 250ms var(--cubic-bezier);
+}
+@media screen and (min-width: 768px) {
+  .overlay-box {
+    padding: 49px 24px 77px 24px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .overlay-box {
