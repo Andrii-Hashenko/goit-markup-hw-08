@@ -1270,16 +1270,31 @@ textarea {
 /* PROJECTS */
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
   margin: 0;
   padding: 0;
-  padding-top: 94px;
+  width: 80%;
+  padding-top: 60px;
   list-style: none;
-  margin-left: calc(-1 * var(--filter-gap));
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    justify-content: center;
+    padding-top: 94px;
+    margin-left: calc(-1 * var(--filter-gap));
+  }
 }
 .filter__item {
-  margin-left: var(--filter-gap);
-  margin-bottom: 50px;
+  margin-left: 8px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .filter__item {
+    margin-left: var(--filter-gap);
+    margin-bottom: 50px;
+  }
 }
 
 .filter__btn-projects {
@@ -1302,19 +1317,30 @@ textarea {
 }
 
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: calc(-1 * var(--ul-class-gap));
-  margin-bottom: calc(-1 * var(--ul-class-gap));
+  width: 100%;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--ul-class-gap));
+    margin-bottom: calc(-1 * var(--ul-class-gap));
+  }
 }
 .portfolio__item {
-  flex-basis: calc(33.3333333333% - var(--ul-class-gap));
-  margin-left: var(--ul-class-gap);
-  margin-bottom: var(--ul-class-gap);
+  width: 100%;
   align-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    flex-basis: calc(33.3333333333% - var(--ul-class-gap));
+    margin-left: var(--ul-class-gap);
+    margin-bottom: var(--ul-class-gap);
+  }
 }
 .portfolio__link {
   display: block;
@@ -1330,6 +1356,7 @@ textarea {
   border-right: 1px solid var(--headline-border-bottom);
   border-bottom: 1px solid var(--headline-border-bottom);
   border-left: 1px solid var(--headline-border-bottom);
+  margin-bottom: 30px;
 }
 .portfolio-card__head {
   font-weight: 700;
@@ -1351,17 +1378,28 @@ textarea {
   overflow: hidden;
 }
 
+.portfolio__img {
+  width: 100%;
+  text-align: center;
+}
+
 .overlay-box {
   position: absolute;
   top: 0;
   left: 0;
-  width: 370;
+  width: 100%;
   height: 100%;
   background: var(--overlay-box-bg);
-  padding: 45px 19px 81px 29px;
+  padding: 77px 24px;
   transform: translatey(137%);
   opacity: 0;
   transition: transform 250ms var(--cubic-bezier), opacity 250ms var(--cubic-bezier);
+}
+@media screen and (min-width: 1200px) {
+  .overlay-box {
+    width: 370;
+    padding: 45px 19px 81px 29px;
+  }
 }
 .overlay-box__text {
   font-size: 18px;
