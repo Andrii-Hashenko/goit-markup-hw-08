@@ -707,13 +707,8 @@ address {
 
 /* clients */
 .clients__title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 28px;
-  line-height: 33px;
-  font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: #212121;
@@ -722,6 +717,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
+    font-size: 36px;
     margin-bottom: 50px;
   }
 }
@@ -734,6 +730,7 @@ address {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  margin-left: -15px;
 }
 @media screen and (min-width: 1200px) {
   .clients-list {
@@ -742,7 +739,6 @@ address {
   }
 }
 .clients-list__item {
-  flex-basis: calc(50% - var(--ul-class-gap));
   margin-left: var(--ul-class-gap);
   box-sizing: border-box;
   justify-content: center;
@@ -762,12 +758,17 @@ address {
 }
 .clients-list__link {
   display: flex;
-  padding: 15px 31px;
+  padding: 16px 48px;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border 250ms var(--cubic-bezier);
+}
+@media screen and (min-width: 1200px) {
+  .clients-list__link {
+    padding: 15px 31px;
+  }
 }
 .clients-list__link:hover, .clients-list__link:focus {
   fill: #2196f3;
