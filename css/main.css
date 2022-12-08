@@ -175,8 +175,8 @@ address {
   }
 }
 
-.menu-button .icon-close:hover,
-.menu-button .icon-close:focus {
+.menu-button:hover,
+.menu-button:focus {
   fill: var(--web-hover-fokus);
 }
 
@@ -187,6 +187,7 @@ address {
   width: 100%;
   height: auto;
   text-align: start;
+  z-index: 1;
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   padding: 48px 40px;
@@ -340,14 +341,16 @@ address {
     padding: 32px 0;
   }
 }
-.contacts-head__contact:hover, .contacts-head__contact:focus {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  color: var(--web-hover-fokus);
+@media screen and (max-width: 767px) {
+  .contacts-head__tel {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: var(--web-hover-fokus);
+  }
 }
 
 .mobile-list {
@@ -729,8 +732,8 @@ address {
   list-style: none;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-  margin-left: -15px;
+  width: 480px;
+  margin-left: calc(-1 * var(--ul-class-gap));
 }
 @media screen and (min-width: 1200px) {
   .clients-list {
@@ -739,6 +742,8 @@ address {
   }
 }
 .clients-list__item {
+  display: flex;
+  width: 100%;
   margin-left: var(--ul-class-gap);
   box-sizing: border-box;
   justify-content: center;
@@ -758,7 +763,7 @@ address {
 }
 .clients-list__link {
   display: flex;
-  padding: 16px 48px;
+  padding: 16px 50px;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;

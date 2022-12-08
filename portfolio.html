@@ -25,60 +25,111 @@
     <header>
       <div class="page-head">
         <div class="conteiner">
-         
-          <nav class="nav-menu">
-            <a class="logo" href="./index.html"
+          <a class="logo" href="./index.html"
             ><span class="logo-web">Web</span>Studio</a
           >
-          
-            <ul class="nav-head">
-              <li class="nav-head__item">
+          <div class="menu-conteiner is-open" id="menu-container" data-menu>
+            <nav class="nav-menu">
+              <ul class="nav-head">
+                <li class="nav-head__item">
+                  <a class="nav-head__label" href="./index.html">Студія</a>
+                </li>
+                <li class="nav-head__item">
+                  <a
+                    class="nav-head__label nav-head__label--current"
+                    href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="nav-head__item">
+                  <a class="nav-head__label" href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contacts-head">
+              <li class="contacts-head__item">
                 <a
-                  class="nav-head__label"
-                  href="./index.html"
-                  >Студія</a
+                  class="contacts-head__contact"
+                  href="mailto:info@devstudio.com"
+                  ><svg class="svg-icon" width="16" height="12">
+                    <use href="./images/icons.svg#envelope"></use></svg
+                  >info@devstudio.com</a
                 >
               </li>
-              <li class="nav-head__item">
-                <a class="nav-head__label nav-head__label--current" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li class="nav-head__item">
-                <a class="nav-head__label" href="">Контакти</a>
+              <li class="contacts-head__item">
+                <a
+                  class="contacts-head__contact contacts-head__tel"
+                  href="tel:+380961111111"
+                  ><svg class="svg-icon" width="10" height="16">
+                    <use href="./images/icons.svg#smartphone"></use></svg
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
-          </nav>
-          <ul class="contacts-head">
-            <li class="contacts-head__item">
-              <a class="contacts-head__contact" href="mailto:info@devstudio.com"
-                ><svg class="svg-icon" width="16" height="12">
-                  <use href="./images/icons.svg#envelope"></use></svg
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts-head__item">
-              <a class="contacts-head__contact" href="tel:+380961111111"
-                ><svg class="svg-icon" width="10" height="16">
-                  <use href="./images/icons.svg#smartphone"></use></svg
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+
+            <ul class="mobile-list">
+              <li class="mobile-list__item">
+                <a
+                  class="mobile-list__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li class="mobile-list__item">
+                <a
+                  class="mobile-list__link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li class="mobile-list__item">
+                <a
+                  class="mobile-list__link"
+                  href="https://facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li class="mobile-list__item">
+                <a
+                  class="mobile-list__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <button
-          type="button"
-          class="menu-button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
           >
-            <use class="icon-close" href="./images/icons.svg#close_24px"></use>
-            <use class="icon-menu" href="./images/icons.svg#menu_24px"></use>
-          </svg>
-        </button>
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-close"
+                href="./images/icons.svg#close_24px"
+              ></use>
+              <use class="icon-menu" href="./images/icons.svg#menu_24px"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -92,16 +143,22 @@
               <button class="filter__btn-projects" type="button">Усі</button>
             </li>
             <li class="filter__item">
-              <button class="filter__btn-projects" type="button">Веб-сайти</button>
+              <button class="filter__btn-projects" type="button">
+                Веб-сайти
+              </button>
             </li>
             <li class="filter__item">
-              <button class="filter__btn-projects" type="button">Додатки</button>
+              <button class="filter__btn-projects" type="button">
+                Додатки
+              </button>
             </li>
             <li class="filter__item">
               <button class="filter__btn-projects" type="button">Дизайн</button>
             </li>
             <li class="filter__item">
-              <button class="filter__btn-projects" type="button">Маркетинг</button>
+              <button class="filter__btn-projects" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
@@ -288,7 +345,9 @@
                 </div>
 
                 <div class="portfolio-card">
-                  <h2 class="portfolio-card__head">Inspiration has no Borders</h2>
+                  <h2 class="portfolio-card__head">
+                    Inspiration has no Borders
+                  </h2>
                   <p class="portfolio-card__text">Веб-сайт</p>
                 </div>
               </a>
@@ -497,5 +556,13 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

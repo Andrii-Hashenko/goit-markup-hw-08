@@ -1,15 +1,14 @@
 /* clients */
 .clients__title {
   font-weight: 700;
-    font-size: 28px;
-   line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   color: $text-color;
   margin-top: 60px;
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
-    
   }
 
   @media screen and (min-width: 1200px) {
@@ -24,10 +23,10 @@
   list-style: none;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-  margin-left: -15px;
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-    
+  width: 480px;
+  margin-left: calc(-1 * var(--ul-class-gap));
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
@@ -35,16 +34,16 @@
   }
 
   &__item {
-    // flex-basis: calc(100% / 2 - var(--ul-class-gap));
+    display: flex;
+    width: 100%;
     margin-left: var(--ul-class-gap);
     box-sizing: border-box;
     justify-content: center;
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin-bottom: 30px;
-    
+
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 3 * 30px) / 3);
-      
     }
     @media screen and (min-width: 1200px) {
       flex-basis: calc(100% / 6 - var(--ul-class-gap));
@@ -54,7 +53,7 @@
 
   &__link {
     display: flex;
-    padding: 16px 48px;
+    padding: 16px 50px;
     justify-content: center;
     align-items: center;
     border: 1px solid $social-link-icon;
