@@ -132,6 +132,11 @@ address {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (min-width: 768px) {
+  .page-head .conteiner {
+    align-content: center;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .nav-menu {
@@ -182,31 +187,29 @@ address {
     display: none;
   }
 }
-
-.menu-button:hover,
-.menu-button:focus {
+.menu-button:hover, .menu-button:focus {
   fill: var(--web-hover-fokus);
 }
 
-.menu-conteiner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: auto;
-  background: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-}
 @media screen and (max-width: 767px) {
   .menu-conteiner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: auto;
     display: none;
     padding: 48px 40px;
     text-align: start;
     width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
 }
 @media screen and (min-width: 768px) {
   .menu-conteiner {
     display: flex;
+    right: 0;
     width: 70%;
   }
 }
@@ -223,10 +226,7 @@ address {
 @media screen and (min-width: 768px) {
   .nav-head {
     display: flex;
-    height: 80px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -237,17 +237,11 @@ address {
     padding-left: 0;
   }
 }
-@media screen and (min-width: 1200px) {
-  .nav-head__item {
-    margin-top: 40px;
-    margin-left: 40px;
-  }
-}
 .nav-head__item:not(:first-child) {
   margin-top: 40px;
 }
 @media screen and (min-width: 1200px) {
-  .nav-head__item:not(:first-child) {
+  .nav-head__item {
     margin-left: 50px;
   }
 }
@@ -261,12 +255,19 @@ address {
   color: var(--text-color);
   transition: color 250ms var(--cubic-bezier);
 }
+@media screen and (min-width: 768px) {
+  .nav-head__label {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 @media screen and (min-width: 1200px) {
   .nav-head__label {
     position: relative;
     display: block;
     padding: 32px 0;
-    line-height: 1.14;
   }
 }
 .nav-head__label:hover, .nav-head__label:focus {
@@ -304,7 +305,6 @@ address {
 @media screen and (min-width: 768px) {
   .contacts-head {
     display: flex;
-    flex-wrap: wrap;
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
@@ -320,16 +320,20 @@ address {
     padding-left: 0;
   }
 }
-.contacts-head__item {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .contacts-head__item {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts-head__item {
     margin-left: 40px;
   }
 }
-.contacts-head__item:first-child {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .contacts-head__item:first-child {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts-head__item:not(:first-child) {
@@ -359,6 +363,14 @@ address {
   letter-spacing: 0.02em;
   color: var(--additional-text);
   transition: color 250ms var(--cubic-bezier);
+}
+@media screen and (min-width: 768px) {
+  .contacts-head__contact {
+    font-size: 12px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts-head__contact {
@@ -433,7 +445,9 @@ address {
 @media screen and (min-width: 768px) {
   .logo {
     margin-top: 26px;
+    margin-right: 0;
     margin-bottom: 26px;
+    margin-left: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -512,6 +526,13 @@ address {
   padding: 0;
   list-style: none;
 }
+@media screen and (min-width: 768px) {
+  .conteiner .offer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--ul-class-gap));
+  }
+}
 @media screen and (min-width: 1200px) {
   .conteiner .offer {
     display: flex;
@@ -519,6 +540,12 @@ address {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .offer__item {
+    flex-basis: calc(50% - var(--ul-class-gap));
+    margin-left: var(--ul-class-gap);
+  }
+}
 @media screen and (min-width: 1200px) {
   .offer__item {
     flex-basis: calc(25% - var(--ul-class-gap));

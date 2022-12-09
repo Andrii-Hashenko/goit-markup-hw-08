@@ -4,7 +4,11 @@
   padding: 0;
   list-style: none;
   
-
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--ul-class-gap));
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: calc(-1 * var(--ul-class-gap));
@@ -12,6 +16,10 @@
 }
 .offer {
   &__item {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - var(--ul-class-gap));
+      margin-left: var(--ul-class-gap);
+    }
     @media screen and (min-width: 1200px) {
       flex-basis: calc(100% / 4 - var(--ul-class-gap));
       margin-left: var(--ul-class-gap);
