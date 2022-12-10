@@ -127,25 +127,23 @@ address {
 
 /* HEADER */
 .page-head .conteiner {
-  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .page-head .conteiner {
+    position: relative;
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 768px) {
   .page-head .conteiner {
     align-content: center;
+    height: 80px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .nav-menu {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1200px) {
   .nav-menu {
     display: flex;
     justify-content: flex-start;
@@ -211,6 +209,7 @@ address {
     display: flex;
     right: 0;
     width: 100%;
+    height: 80px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -220,13 +219,20 @@ address {
 }
 
 .nav-head {
-  margin-bottom: 300px;
   padding-left: 0;
+}
+@media screen and (max-width: 767px) {
+  .nav-head {
+    margin-bottom: 300px;
+  }
 }
 @media screen and (min-width: 768px) {
   .nav-head {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
+    align-content: center;
+    height: 100%;
     margin: 0;
     margin-right: auto;
   }
@@ -259,7 +265,7 @@ address {
   }
 }
 @media screen and (min-width: 1200px) {
-  .nav-head__item {
+  .nav-head__item:not(:first-child) {
     margin-left: 50px;
   }
 }
@@ -277,15 +283,9 @@ address {
   .nav-head__label {
     position: relative;
     display: block;
+    padding: 32px 0;
     font-size: 14px;
     line-height: 1.14;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .nav-head__label {
-    position: relative;
-    display: block;
-    padding: 32px 0;
   }
 }
 .nav-head__label:hover, .nav-head__label:focus {
@@ -305,26 +305,7 @@ address {
     opacity: 0;
   }
 }
-@media screen and (min-width: 1200px) {
-  .nav-head__label::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 5px;
-    background: var(--web-hover-fokus);
-    border-radius: 2px;
-    opacity: 0;
-  }
-}
 @media screen and (min-width: 768px) {
-  .nav-head__label--current::after {
-    opacity: 1;
-  }
-}
-@media screen and (min-width: 1200px) {
   .nav-head__label--current::after {
     opacity: 1;
   }
@@ -335,15 +316,19 @@ address {
 
 .contacts-head {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  padding-left: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts-head {
-    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-head {
     flex-direction: column;
     justify-content: center;
+    margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
@@ -351,7 +336,6 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .contacts-head {
-    display: flex;
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
@@ -424,6 +408,9 @@ address {
     padding: 32px 0;
   }
 }
+.contacts-head__contact:hover, .contacts-head__contact:focus {
+  color: var(--web-hover-fokus);
+}
 @media screen and (max-width: 767px) {
   .contacts-head__tel {
     font-family: "Roboto";
@@ -488,16 +475,19 @@ address {
 @media screen and (min-width: 768px) {
   .logo {
     margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 26px;
-    margin-left: 15px;
+    margin-right: 87px;
+    margin-bottom: 0;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.19;
+    margin-top: 0;
     margin-right: 93px;
+    margin-bottom: 0;
+    margin-left: 0;
   }
 }
 
