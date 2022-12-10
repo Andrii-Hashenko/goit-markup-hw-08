@@ -4,7 +4,6 @@ footer {
   padding-top: 60px;
 }
 .conteiner .footer-box {
-  
   margin: 0;
   padding: 0;
 
@@ -29,9 +28,9 @@ footer {
 .page-footer__logo {
   display: block;
   text-align: center;
+  color: var(--hero-footer);
   margin-left: 0;
   margin-bottom: 20px;
-  color: var(--hero-footer);
 
   @media screen and (min-width: 768px) {
     display: inline-block;
@@ -43,7 +42,6 @@ footer {
     display: inline-block;
     padding: 0;
     margin: 0;
-    margin-bottom: 20px;
   }
 }
 
@@ -58,16 +56,16 @@ footer {
     width: 50%;
     margin-left: 0;
   }
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    text-align: start;
+  }
 
   &__item {
     line-height: 1.71;
     color: var(--hero-footer);
     margin-bottom: 9px;
     transition: color 250ms var(--cubic-bezier);
-
-    @media screen and (min-width: 1200px) {
-      width: 231px;
-    }
   }
 
   &__item:last-child {
@@ -96,14 +94,13 @@ footer {
   margin: 0;
   padding: 0;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px){
     position: absolute;
     top: 0;
     right: 0;
     width: 50%;
     margin-right: 0;
     margin-left: auto;
-    
   }
 
   @media screen and (min-width: 1200px) {
@@ -191,7 +188,7 @@ footer {
     width: 100%;
   }
   &__title {
-       font-weight: 700;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -234,6 +231,7 @@ footer {
     @media screen and (min-width: 1200px) {
       width: 354px;
       margin-right: 12px;
+      margin-bottom: 0;
     }
   }
 
@@ -256,6 +254,10 @@ footer {
   margin: 0;
   transition: bakground 250ms var(--cubic-bezier);
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 
   &:hover,
   &:focus {

@@ -932,9 +932,9 @@ footer {
 .page-footer__logo {
   display: block;
   text-align: center;
+  color: var(--hero-footer);
   margin-left: 0;
   margin-bottom: 20px;
-  color: var(--hero-footer);
 }
 @media screen and (min-width: 768px) {
   .page-footer__logo {
@@ -949,7 +949,6 @@ footer {
     display: inline-block;
     padding: 0;
     margin: 0;
-    margin-bottom: 20px;
   }
 }
 
@@ -966,16 +965,17 @@ footer {
     margin-left: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .adres-footer {
+    width: 231px;
+    text-align: start;
+  }
+}
 .adres-footer__item {
   line-height: 1.71;
   color: var(--hero-footer);
   margin-bottom: 9px;
   transition: color 250ms var(--cubic-bezier);
-}
-@media screen and (min-width: 1200px) {
-  .adres-footer__item {
-    width: 231px;
-  }
 }
 .adres-footer__item:last-child {
   padding-bottom: 60px;
@@ -997,7 +997,7 @@ footer {
   margin: 0;
   padding: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .conteiner .joinin-box {
     position: absolute;
     top: 0;
@@ -1138,6 +1138,7 @@ footer {
   .subscribe-form__input {
     width: 354px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 .subscribe-form__input:hover {
@@ -1157,6 +1158,11 @@ footer {
   margin: 0;
   transition: bakground 250ms var(--cubic-bezier);
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form__button {
+    margin-bottom: 0;
+  }
 }
 .subscribe-form__button:hover, .subscribe-form__button:focus {
   background: var(--web-hover-fokus);
