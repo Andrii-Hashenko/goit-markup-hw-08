@@ -79,7 +79,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     right: 0;
-    width: 70%;
+    width: 100%;
   }
 
   &.is-open {
@@ -94,7 +94,9 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: baseline;
     margin: 0;
+    margin-right: auto;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -103,13 +105,20 @@
     padding-left: 0;
   }
   &__item {
+    @media screen and (min-width: 768px) {
+      margin-left: 40px;
+    }
+
     @media screen and (min-width: 1200px) {
-      // margin-top: 40px;
-      // margin-left: 40px;
+      margin-top: 40px;
+      margin-left: 40px;
     }
 
     &:not(:first-child) {
       margin-top: 40px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 50px;
+      }
     }
 
     @media screen and (min-width: 1200px) {
@@ -147,6 +156,18 @@
   }
 
   &__label::after {
+    @media screen and (min-width: 768px) {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 5px;
+      background: var(--web-hover-fokus);
+      border-radius: 2px;
+      opacity: 0;
+    }
     @media screen and (min-width: 1200px) {
       content: "";
       position: absolute;
@@ -162,6 +183,9 @@
   }
 
   &__label--current::after {
+    @media screen and (min-width: 768px) {
+      opacity: 1;
+    }
     @media screen and (min-width: 1200px) {
       opacity: 1;
     }
@@ -180,10 +204,13 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: auto;
+    flex-direction: column;
+    justify-content: center;
+    // margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 0;
+
+    padding: 0;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -196,7 +223,9 @@
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
-
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
     @media screen and (min-width: 1200px) {
       margin-left: 40px;
     }

@@ -210,7 +210,7 @@ address {
   .menu-conteiner {
     display: flex;
     right: 0;
-    width: 70%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -226,7 +226,9 @@ address {
 @media screen and (min-width: 768px) {
   .nav-head {
     display: flex;
+    align-items: baseline;
     margin: 0;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -237,8 +239,24 @@ address {
     padding-left: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .nav-head__item {
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-head__item {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+}
 .nav-head__item:not(:first-child) {
   margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .nav-head__item:not(:first-child) {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .nav-head__item {
@@ -273,6 +291,20 @@ address {
 .nav-head__label:hover, .nav-head__label:focus {
   color: var(--web-hover-fokus);
 }
+@media screen and (min-width: 768px) {
+  .nav-head__label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: var(--web-hover-fokus);
+    border-radius: 2px;
+    opacity: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .nav-head__label::after {
     content: "";
@@ -285,6 +317,11 @@ address {
     background: var(--web-hover-fokus);
     border-radius: 2px;
     opacity: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-head__label--current::after {
+    opacity: 1;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -305,10 +342,11 @@ address {
 @media screen and (min-width: 768px) {
   .contacts-head {
     display: flex;
-    margin-left: auto;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 0;
+    padding: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -323,6 +361,11 @@ address {
 @media screen and (max-width: 767px) {
   .contacts-head__item {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-head__item {
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -444,7 +487,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    margin-top: 26px;
+    margin-top: 0;
     margin-right: 0;
     margin-bottom: 26px;
     margin-left: 15px;
@@ -558,6 +601,11 @@ address {
   border-radius: 4px;
   padding: 25px 190px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .offer__icon {
+    padding: 25px 142px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .offer__icon {
@@ -859,6 +907,11 @@ footer {
   margin: 0;
   padding: 0;
 }
+@media screen and (min-width: 768px) {
+  .conteiner .footer-box {
+    position: relative;
+  }
+}
 @media screen and (min-width: 1200px) {
   .conteiner .footer-box {
     justify-content: start;
@@ -907,6 +960,12 @@ footer {
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .adres-footer {
+    width: 50%;
+    margin-left: 0;
+  }
+}
 .adres-footer__item {
   line-height: 1.71;
   color: var(--hero-footer);
@@ -938,6 +997,16 @@ footer {
   margin: 0;
   padding: 0;
 }
+@media screen and (min-width: 768px) {
+  .conteiner .joinin-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .conteiner .joinin-box {
     width: 206px;
@@ -956,6 +1025,12 @@ footer {
   margin-bottom: 20px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .joinin-box {
+    padding-top: 5px;
+  }
+}
+
 .joinin-box .joinin-list {
   display: flex;
   gap: 10px;
@@ -1002,6 +1077,13 @@ footer {
   display: block;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe-form {
     position: relative;
@@ -1018,6 +1100,12 @@ footer {
   margin-bottom: 20px;
   color: var(--hero-footer);
   margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe-form__title {
+    margin-top: 0;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe-form__title {
@@ -1149,6 +1237,16 @@ footer {
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .form__text {
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__text {
+    line-height: 1.15;
+  }
 }
 .form__label {
   font-family: "Roboto";
@@ -1340,6 +1438,13 @@ textarea {
   list-style: none;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .filter {
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .filter {
     justify-content: center;
@@ -1393,6 +1498,7 @@ textarea {
   }
 }
 .portfolio__item {
+  display: flex;
   width: 100%;
   align-content: center;
 }

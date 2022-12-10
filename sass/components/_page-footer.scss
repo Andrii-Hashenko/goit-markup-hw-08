@@ -4,8 +4,13 @@ footer {
   padding-top: 60px;
 }
 .conteiner .footer-box {
+  
   margin: 0;
   padding: 0;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
 
   @media screen and (min-width: 1200px) {
     justify-content: start;
@@ -46,9 +51,13 @@ footer {
   margin: 0;
   padding-left: 0;
   text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-  
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    margin-left: 0;
+  }
 
   &__item {
     line-height: 1.71;
@@ -87,6 +96,16 @@ footer {
   margin: 0;
   padding: 0;
 
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    margin-right: 0;
+    margin-left: auto;
+    
+  }
+
   @media screen and (min-width: 1200px) {
     width: 206px;
     margin-right: 93px;
@@ -105,7 +124,7 @@ footer {
     text-align: center;
   }
   @media screen and (min-width: 768px) {
-    
+    padding-top: 5px;
   }
 }
 
@@ -158,8 +177,13 @@ footer {
 }
 .subscribe-form {
   display: block;
-    text-align: center;
-  
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @media screen and (min-width: 1200px) {
     position: relative;
@@ -167,7 +191,7 @@ footer {
     width: 100%;
   }
   &__title {
-    font-weight: 700;
+       font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -175,8 +199,10 @@ footer {
     margin-bottom: 20px;
     color: var(--hero-footer);
     margin-top: 60px;
-    
-
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+      text-align: center;
+    }
     @media screen and (min-width: 1200px) {
       padding-top: 12px;
     }
@@ -204,7 +230,6 @@ footer {
     transition: border 250ms var(--cubic-bezier);
     width: 100%;
     margin-bottom: 20px;
-    
 
     @media screen and (min-width: 1200px) {
       width: 354px;
@@ -231,7 +256,7 @@ footer {
   margin: 0;
   transition: bakground 250ms var(--cubic-bezier);
   margin-bottom: 60px;
-  
+
   &:hover,
   &:focus {
     background: var(--web-hover-fokus);

@@ -34,6 +34,7 @@
     margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
+      padding: 25px 142px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -43,7 +44,7 @@
   }
 
   &__title {
-    font-weight: 700;
+        font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
