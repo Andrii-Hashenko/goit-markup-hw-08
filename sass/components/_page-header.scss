@@ -119,15 +119,18 @@
       margin-left: 40px;
     }
   }
+  &__item:first-child {
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+    }
+  }
   &__item:not(:first-child) {
     margin-top: 40px;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 50px;
     }
-    @media screen and (min-width: 1200px) {
-      margin-left: 50px;
-    }
+    
   }
 
   &__label {
@@ -219,12 +222,11 @@
     @media screen and (max-width: 767px) {
       margin-bottom: 60px;
     }
-  }
-  &__item:not(:first-child) {
     @media screen and (min-width: 1200px) {
       margin-left: 50px;
     }
   }
+  
 
   &__item .svg-icon {
     align-items: center;
