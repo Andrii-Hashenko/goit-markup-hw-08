@@ -67,17 +67,17 @@ body {
 }
 @media screen and (min-width: 480px) {
   .conteiner {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -727,7 +727,6 @@ address {
   .team-conteiner {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     flex-basis: calc((100% - 60px) / 2);
   }
 }
@@ -751,7 +750,6 @@ address {
 }
 
 .team-box {
-  width: 100%;
   text-align: center;
   margin-bottom: 30px;
   background: var(--hero-footer);
@@ -1506,20 +1504,23 @@ textarea {
   padding: 0;
   list-style: none;
   width: 100%;
-  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .portfolio {
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--ul-class-gap));
-    margin-bottom: calc(-1 * var(--ul-class-gap));
   }
 }
 .portfolio__item {
   display: flex;
   width: 100%;
   align-content: center;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__item {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio__item {
@@ -1552,14 +1553,14 @@ textarea {
   border-right: 1px solid var(--headline-border-bottom);
   border-bottom: 1px solid var(--headline-border-bottom);
   border-left: 1px solid var(--headline-border-bottom);
-  margin-bottom: 30px;
   flex-grow: 1;
 }
 .portfolio-card__head {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   color: var(--text-color);
   margin-bottom: 4px;
 }
