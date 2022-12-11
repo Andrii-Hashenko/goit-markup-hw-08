@@ -59,20 +59,25 @@ body {
 }
 
 .conteiner {
-  max-width: 480px;
+  width: 100vw;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .conteiner {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
