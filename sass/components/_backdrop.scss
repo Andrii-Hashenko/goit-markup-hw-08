@@ -13,4 +13,5 @@
     visibility: visible;
     transition: opacity 250ms var(--cubic-bezier),
       visibility 250ms var(--cubic-bezier);
+      overflow-y: scroll;
   }

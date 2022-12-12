@@ -120,10 +120,17 @@ footer {
     color: var(--hero-footer);
     margin-bottom: 20px;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      padding-top: 5px;
+     
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 10px;
+      text-align: start;
+    }
   }
-  @media screen and (min-width: 768px) {
-    padding-top: 5px;
-  }
+
+  
 }
 
 .joinin-box .joinin-list {
@@ -203,6 +210,7 @@ footer {
     }
     @media screen and (min-width: 1200px) {
       padding-top: 12px;
+      text-align: start;
     }
   }
 
@@ -228,7 +236,10 @@ footer {
     transition: border 250ms var(--cubic-bezier);
     width: 100%;
     margin-bottom: 20px;
-
+    @media screen and (min-width: 768px) {
+      width: 450px;
+      
+    }
     @media screen and (min-width: 1200px) {
       width: 354px;
       margin-right: 12px;

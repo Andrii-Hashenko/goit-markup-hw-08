@@ -119,19 +119,38 @@
   }
 
   &__checkbox-label {
-    display: inline-block;
-    margin-left: 16px;
-    margin-bottom: 30px;
-  }
-
-  &__consent {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    font-size: 12px;
+    line-height: 1.17;
+        letter-spacing: 0.03em;
     color: var(--additional-text);
+    display: inline-block;
+    
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+      margin-left: 16px;
+    }
+  }
+
+  &__consent {
+    
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+        letter-spacing: 0.03em;
+    color: var(--additional-text);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 
   &__checkbox-icon {

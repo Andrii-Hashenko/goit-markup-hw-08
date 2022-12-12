@@ -1,7 +1,13 @@
 /* OFFER */
+.section .offer {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 0;
+  }
+}
 .conteiner .offer {
   margin: 0;
   padding: 0;
+  padding-bottom: 0;
   list-style: none;
   
   @media screen and (min-width: 768px) {
@@ -15,6 +21,7 @@
   }
 }
 .offer {
+  
   &__item {
     @media screen and (min-width: 768px) {
       flex-basis: calc(100% / 2 - var(--ul-class-gap));
@@ -31,14 +38,22 @@
     background: var(--team-background);
     border-radius: 4px;
     padding: 25px 190px;
+    width: 450px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
       padding: 25px 142px;
+      width: 354px;
+    height: 120px;
     }
 
     @media screen and (min-width: 1200px) {
       padding: 25px 100px;
+      width: 270px;
+    height: 120px;
       margin-bottom: 55px;
     }
   }
@@ -52,8 +67,8 @@
     margin-bottom: 10px;
     text-align: center;
     
-    @media screen and (min-width: 1200px) {
-      font-size: 16px;
+    @media screen and (min-width: 768px) {
+      text-align: start;
     }
   }
 
@@ -62,8 +77,11 @@
     color: $additional-text;
   }
   &__text:not(last-child) {
+   
     margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
-  @media screen and (min-width: 768px) {
-  }
+
 }
