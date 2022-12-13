@@ -148,6 +148,11 @@ address {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .nav-menu {
+    margin-bottom: 25%;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav-menu {
     display: flex;
@@ -203,8 +208,8 @@ address {
     display: none;
     padding: 48px 40px;
     text-align: start;
-    width: 480px;
-    height: 796px;
+    width: 100%;
+    height: auto;
     overflow-y: scroll;
     background: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -225,12 +230,8 @@ address {
 }
 
 .nav-head {
+  margin: 0;
   padding-left: 0;
-}
-@media screen and (max-width: 767px) {
-  .nav-head {
-    margin-bottom: 300px;
-  }
 }
 @media screen and (min-width: 768px) {
   .nav-head {
@@ -239,7 +240,6 @@ address {
     align-items: baseline;
     align-content: center;
     height: 100%;
-    margin: 0;
     margin-right: auto;
   }
 }
@@ -322,10 +322,10 @@ address {
 
 .contacts-head {
   display: flex;
+  margin: 0;
 }
 @media screen and (max-width: 767px) {
   .contacts-head {
-    margin-top: auto;
     flex-wrap: wrap;
     flex-direction: column-reverse;
     padding-left: 0;
@@ -435,7 +435,8 @@ address {
   display: flex;
   padding-left: 0;
   margin-right: auto;
-  padding-bottom: 48px;
+  margin: 0;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .mobile-list {
@@ -579,16 +580,9 @@ address {
 }
 
 /* OFFER */
-@media screen and (max-width: 1199px) {
-  .section .offer {
-    padding-bottom: 0;
-  }
-}
-
 .conteiner .offer {
   margin: 0;
   padding: 0;
-  padding-bottom: 0;
   list-style: none;
 }
 @media screen and (min-width: 768px) {
@@ -671,15 +665,17 @@ address {
 }
 
 /* JOB */
+@media screen and (max-width: 1199px) {
+  .section-job {
+    display: none;
+    padding-bottom: 0;
+  }
+}
+
 .job {
   margin: 0;
   padding: 0;
   padding-top: 0;
-}
-@media screen and (max-width: 1199px) {
-  .job {
-    display: none;
-  }
 }
 .job__title {
   font-weight: 700;

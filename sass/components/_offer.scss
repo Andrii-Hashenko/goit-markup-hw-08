@@ -1,13 +1,9 @@
 /* OFFER */
-.section .offer {
-  @media screen and (max-width: 1199px) {
-    padding-bottom: 0;
-  }
-}
+
 .conteiner .offer {
   margin: 0;
   padding: 0;
-  padding-bottom: 0;
+  
   list-style: none;
   
   @media screen and (min-width: 768px) {
