@@ -721,7 +721,6 @@ address {
 /* TEAM */
 .team {
   background: var(--team-background);
-  padding-bottom: 0;
 }
 .team__title {
   font-weight: 700;
